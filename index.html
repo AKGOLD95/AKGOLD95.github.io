@@ -3,10 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تطبيقاتي وأدواتي</title>
+    <title>AKGOLD95 | تطبيقات وأدوات مجانية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <h1>مرحباً بك في موقع أدواتي</h1>
-    <p>هنا سأقوم بنشر روابط تحميل تطبيقاتي لتكون متاحة للجميع مجاناً.</p>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col justify-between">
+
+    <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold bg-gradient-to-l from-indigo-400 to-cyan-400 bg-clip-text text-transparent">AKGOLD95</span>
+            <nav class="space-x-4 space-x-reverse text-sm text-slate-400">
+                <a href="#" class="hover:text-white transition">الرئيسية</a>
+                <a href="#apps" class="hover:text-white transition">التطبيقات</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="max-w-4xl mx-auto text-center px-4 py-20">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+            منصة نشر <span class="bg-gradient-to-l from-indigo-400 to-purple-400 bg-clip-text text-transparent">التطبيقات والأدوات</span> البرمجية
+        </h1>
+        <p class="text-slate-400 text-lg max-w-2xl mx-auto mb-8">
+            هنا أشارك معكم جميع الأدوات والبرمجيات التي أقوم بتطويرها. يمكنك تحميلها واستخدامها مجاناً بالكامل وبروابط مباشرة.
+        </p>
+        <a href="#apps" class="bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 rounded-lg font-semibold transition inline-block shadow-lg shadow-indigo-600/20">
+            تصفح الأدوات
+        </a>
+    </section>
+
+    <main id="apps" class="max-w-6xl mx-auto px-4 py-12 flex-grow w-full">
+        <h2 class="text-2xl font-bold mb-8 border-r-4 border-indigo-500 pr-3">الأدوات المتاحة حالياً</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-slate-800/50 border border-slate-700/50 rounded-xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition group">
+                <div>
+                    <div class="w-12 h-12 bg-indigo-600/10 text-indigo-400 rounded-lg flex items-center justify-center mb-4 group-hover:bg-indigo-600 group-hover:text-white transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke-currentColor="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">اسم التطبيق الأول</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        هنا يمكنك كتابة وصف مختصر ومفيد يعبر عن وظيفة التطبيق والميزات التي يقدمها للمستخدمين.
+                    </p>
+                </div>
+                <a href="#" class="w-full text-center bg-slate-700 hover:bg-indigo-600 text-white py-2.5 rounded-lg font-medium transition text-sm">
+                    تحميل التطبيق
+                </a>
+            </div>
+
+            <div class="bg-slate-800/50 border border-slate-700/50 rounded-xl p-6 flex flex-col justify-between hover:border-indigo-500/50 transition group">
+                <div>
+                    <div class="w-12 h-12 bg-indigo-600/10 text-indigo-400 rounded-lg flex items-center justify-center mb-4 group-hover:bg-indigo-600 group-hover:text-white transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke-currentColor="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">اسم التطبيق الثاني</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        هنا يمكنك كتابة وصف مختصر ومفيد يعبر عن وظيفة التطبيق والميزات التي يقدمها للمستخدمين.
+                    </p>
+                </div>
+                <a href="#" class="w-full text-center bg-slate-700 hover:bg-indigo-600 text-white py-2.5 rounded-lg font-medium transition text-sm">
+                    تحميل التطبيق
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-slate-800 py-6 text-center text-sm text-slate-500 bg-slate-950">
+        <p>© 2026 AKGOLD95. جميع الحقوق محفوظة.</p>
+    </footer>
+
 </body>
 </html>
